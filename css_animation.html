@@ -56,16 +56,23 @@
      */
     /* ---1--- */
     #ex1 {
+        margin-top: 40px;
+        margin-bottom: 40px;
         width: 100px;
         height: 100px;
+        padding: 30px;
+        text-align: center;
+        background-color: #282c34;
+    }
+    #ex1:hover {
         animation-name: ex1;
         animation-duration: 700ms;
-        animation-iteration-count: infinite;
     }
     @keyframes ex1 {
-        0%  {background-color: #1b2225;}
-        50%  {background-color: #62658a;}
-        100% {background-color: #1b2225;}
+        0%  {transform: translateY(0px);}
+        50%  {transform: translateY(-40px);}
+        75% {transform: translateY(30px);}
+        0%  {transform: translateY(0px);}
     }
     /* ---2--- */
     #ex2 {
@@ -88,17 +95,22 @@
 <pre><code class="css">#ex1 {
     width: 100px;
     height: 100px;
+    padding: 30px;
+    text-align: center;
+    background-color: #282c34;
+}
+#ex1:hover {
     animation-name: ex1;
     animation-duration: 700ms;
-    animation-iteration-count: infinite;
 }
 @keyframes ex1 {
-    0%  {background-color: #1b2225;}
-    50%  {background-color: #62658a;}
-    100% {background-color: #1b2225;}
+    0%  {transform: translateY(0px);}
+    50%  {transform: translateY(-40px);}
+    75% {transform: translateY(30px);}
+    0%  {transform: translateY(0px);}
 }
 </code></pre>
-             <div id="ex1"></div>
+             <div id="ex1"><h4>TEXT</h4></div>
 
              <h2>Второй пример</h2>
 <pre><code class="css">#ex2 {
